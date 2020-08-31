@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -27,6 +28,31 @@ namespace EventParadigmExample
         {
             MainWindow w = (MainWindow)Window.GetWindow(this);
             w.frameMain.NavigationService.Navigate(new LogIn());
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            string characterName = txtCharacterName.Text;
+            string characterGenre = txtCharacterGenre.Text;
+            string characterElement = txtElement.SelectedItem.ToString();
+            txtResults.Text = characterName + "\n" + characterGenre + "\n" + characterElement + "\n";
+            if (sldStyle.Value>=0 && sldStyle.Value<40)
+            {
+                txtResults.Text = txtResults.Text + "Wizard"+"\n";
+            }
+            else
+            {
+                if (sldStyle.Value >= 40 && sldStyle.Value < 60)
+                {
+                    txtResults.Text = txtResults.Text + "Balanced" + "\n";
+                }
+                else
+                {
+                    txtResults.Text = txtResults.Text + "Fighter" + "\n";
+                }
+            }
+
+
         }
     }
 }

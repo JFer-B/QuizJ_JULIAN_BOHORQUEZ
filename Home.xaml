@@ -22,18 +22,18 @@
             <ListBoxItem Content="Shadow"/>
         </ListBox>
         <ComboBox Name="txtCharacterGenre" HorizontalAlignment="Left" Height="20" Margin="152,98,0,0" VerticalAlignment="Top" Width="143" FontFamily="MV Boli">
-            <ComboBoxItem Content="Man"/>
-            <ComboBoxItem Content="Woman"/>
+            <ComboBoxItem Content="Male"/>
+            <ComboBoxItem Content="Female"/>
         </ComboBox>
         <Slider Name="sldStyle" HorizontalAlignment="Left" Height="24" Margin="152,218,0,0" VerticalAlignment="Top" Width="143"
                 Minimum="0" Maximum="100" TickPlacement="BottomRight" TickFrequency="50"/>
         <Label Content="Select Genre" HorizontalAlignment="Left" Height="30" Margin="57,96,0,0" VerticalAlignment="Top" Width="90" FontFamily="MV Boli" Foreground="White"/>
         <Label Content="Element" HorizontalAlignment="Left" Height="30" Margin="64,139,0,0" VerticalAlignment="Top" Width="76" FontFamily="MV Boli" Foreground="White"/>
         <Label Content="Affinity" HorizontalAlignment="Left" Height="30" Margin="64,154,0,0" VerticalAlignment="Top" Width="76" FontFamily="MV Boli" Foreground="White"/>
-        <Label Content="Wizard" HorizontalAlignment="Left" Height="30" Margin="90,212,0,0" VerticalAlignment="Top" Width="50" FontFamily="MV Boli" Foreground="White"/>
+        <Label Name="lbWizard" Content="Wizard" HorizontalAlignment="Left" Height="30" Margin="90,212,0,0" VerticalAlignment="Top" Width="50" FontFamily="MV Boli" Foreground="White"/>
         <Label Content="Fighter" HorizontalAlignment="Left" Height="30" Margin="300,212,0,0" VerticalAlignment="Top" Width="50" FontFamily="MV Boli" Foreground="White"/>
-        <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="21" Margin="190,253,0,0" VerticalAlignment="Top" Width="68" FontFamily="MV Boli"/>
-        <TextBox Name="txtCharacters" HorizontalAlignment="Left" Height="178" Margin="409,64,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" FontFamily="MV Boli"/>
+        <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="21" Margin="190,253,0,0" VerticalAlignment="Top" Width="68" FontFamily="MV Boli" Click="btnSave_Click"/>
+        <TextBox Name="txtResults" HorizontalAlignment="Left" Height="178" Margin="409,64,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" FontFamily="MV Boli"/>
         <Button Name="btnLogOut" Content="Log Out" HorizontalAlignment="Left" Height="21" Margin="487,253,0,0" VerticalAlignment="Top" Width="72" FontFamily="MV Boli" Click="btnLogOut_Click"/>
 
     </Grid>
