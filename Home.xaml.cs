@@ -23,6 +23,10 @@ namespace EventParadigmExample
             InitializeComponent();
         }
 
-
+        private void btnLogOut_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow w = (MainWindow)Window.GetWindow(this);
+            w.frameMain.NavigationService.Navigate(new LogIn());
+        }
     }
 }

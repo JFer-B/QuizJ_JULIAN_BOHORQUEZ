@@ -34,6 +34,7 @@
         <Label Content="Fighter" HorizontalAlignment="Left" Height="30" Margin="300,212,0,0" VerticalAlignment="Top" Width="50" FontFamily="MV Boli" Foreground="White"/>
         <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="21" Margin="190,253,0,0" VerticalAlignment="Top" Width="68" FontFamily="MV Boli"/>
         <TextBox Name="txtCharacters" HorizontalAlignment="Left" Height="178" Margin="409,64,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" FontFamily="MV Boli"/>
+        <Button Name="btnLogOut" Content="Log Out" HorizontalAlignment="Left" Height="21" Margin="487,253,0,0" VerticalAlignment="Top" Width="72" FontFamily="MV Boli" Click="btnLogOut_Click"/>
 
     </Grid>
 </Page>
