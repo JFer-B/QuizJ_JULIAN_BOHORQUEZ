@@ -9,6 +9,31 @@
       Title="Home">
 
     <Grid Background="#FF561D29">
-        
+        <Label Content="Create Your Character" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="MV Boli" FontSize="24" FontWeight="Bold"/>
+        <TextBox Name="txtCharacterName" HorizontalAlignment="Left" Height="20" Margin="152,62,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" FontFamily="MV Boli"/>
+        <Label Content="Name" HorizontalAlignment="Left" Height="30" Margin="57,57,0,0" VerticalAlignment="Top" Width="45" FontFamily="MV Boli" Foreground="White"/>
+        <ListBox Name="txtElement" HorizontalAlignment="Left" Height="62" Margin="152,138,0,0" VerticalAlignment="Top" Width="143" FontFamily="MV Boli">
+            <ListBoxItem Content="Fire"/>
+            <ListBoxItem Content="Water"/>
+            <ListBoxItem Content="Air"/>
+            <ListBoxItem Content="Earth"/>
+            <ListBoxItem Content="Lightning"/>
+            <ListBoxItem Content="Light"/>
+            <ListBoxItem Content="Shadow"/>
+        </ListBox>
+        <ComboBox Name="txtCharacterGenre" HorizontalAlignment="Left" Height="20" Margin="152,98,0,0" VerticalAlignment="Top" Width="143" FontFamily="MV Boli">
+            <ComboBoxItem Content="Man"/>
+            <ComboBoxItem Content="Woman"/>
+        </ComboBox>
+        <Slider Name="sldStyle" HorizontalAlignment="Left" Height="24" Margin="152,218,0,0" VerticalAlignment="Top" Width="143"
+                Minimum="0" Maximum="100" TickPlacement="BottomRight" TickFrequency="50"/>
+        <Label Content="Select Genre" HorizontalAlignment="Left" Height="30" Margin="57,96,0,0" VerticalAlignment="Top" Width="90" FontFamily="MV Boli" Foreground="White"/>
+        <Label Content="Element" HorizontalAlignment="Left" Height="30" Margin="64,139,0,0" VerticalAlignment="Top" Width="76" FontFamily="MV Boli" Foreground="White"/>
+        <Label Content="Affinity" HorizontalAlignment="Left" Height="30" Margin="64,154,0,0" VerticalAlignment="Top" Width="76" FontFamily="MV Boli" Foreground="White"/>
+        <Label Content="Wizard" HorizontalAlignment="Left" Height="30" Margin="90,212,0,0" VerticalAlignment="Top" Width="50" FontFamily="MV Boli" Foreground="White"/>
+        <Label Content="Fighter" HorizontalAlignment="Left" Height="30" Margin="300,212,0,0" VerticalAlignment="Top" Width="50" FontFamily="MV Boli" Foreground="White"/>
+        <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Height="21" Margin="190,253,0,0" VerticalAlignment="Top" Width="68" FontFamily="MV Boli"/>
+        <TextBox Name="txtCharacters" HorizontalAlignment="Left" Height="178" Margin="409,64,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" FontFamily="MV Boli"/>
+
     </Grid>
 </Page>
