@@ -35,22 +35,24 @@ namespace EventParadigmExample
             string characterName = txtCharacterName.Text;
             string characterGenre = txtCharacterGenre.Text;
             string characterElement = txtElement.SelectedItem.ToString();
-            txtResults.Text = characterName + "\n" + characterGenre + "\n" + characterElement + "\n";
+            txtResults.Text = txtResults.Text + characterName + "\n" + characterGenre + "\n" + characterElement + "\n";
             if (sldStyle.Value>=0 && sldStyle.Value<40)
             {
-                txtResults.Text = txtResults.Text + "Wizard"+"\n";
+                txtResults.Text = txtResults.Text + "Wizard"+"\n"+ "\n";
             }
             else
             {
                 if (sldStyle.Value >= 40 && sldStyle.Value < 60)
                 {
-                    txtResults.Text = txtResults.Text + "Balanced" + "\n";
+                    txtResults.Text = txtResults.Text + "Balanced" + "\n" + "\n";
                 }
                 else
                 {
-                    txtResults.Text = txtResults.Text + "Fighter" + "\n";
+                    txtResults.Text = txtResults.Text + "Fighter" + "\n" + "\n";
                 }
             }
+
+            MessageBox.Show("To add new character" + "\n" + "rewrite the values in the boxes");
 
 
         }
